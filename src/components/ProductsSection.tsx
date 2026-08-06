@@ -53,7 +53,7 @@ export function ProductsSection({
   return (
     <section
       id="products"
-      className="py-24 bg-cream relative z-10 overflow-hidden"
+      className="py-14 md:py-24 bg-cream relative z-10 overflow-hidden"
     >
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 

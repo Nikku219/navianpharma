@@ -12,7 +12,7 @@ import {
 
 export function Hero() {
   return (
-    <div className="relative overflow-hidden min-h-[620px]  md:min-h-screen bg-cream flex flex-col justify-between pt-16 md:pt-20">
+    <div className="relative overflow-hidden min-h-screen bg-cream flex flex-col justify-between pt-20 md:pt-20"
 
       {/* Background Video */}
       <div className="absolute inset-0 overflow-hidden z-0">

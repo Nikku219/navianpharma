@@ -109,7 +109,7 @@ export function ProductsSection({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-soft-ink/70 p-5"
+            className="text-base md:text-lg text-soft-ink/70 px-4 md:px-5"
           >
             Innovative feed supplements and animal healthcare solutions designed
             for healthier livestock and better productivity.

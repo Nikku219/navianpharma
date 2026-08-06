@@ -99,8 +99,7 @@ export function ProductsSection({
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-display text-4xl md:text-5xl font-bold text-dark-purple mb-4"
-          >
+            className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-dark-purple inline-block relative"
             Our Product Range
           </motion.h2>
 

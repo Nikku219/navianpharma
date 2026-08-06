@@ -82,7 +82,7 @@ export function ProductsSection({
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
                 className={cn(
-                  'bg-white rounded-xl shadow-sm border border-dark-purple/5 py-3 px-5 text-center',
+                  className="bg-white rounded-xl shadow-sm border border-dark-purple/5 py-3 px-3 md:px-5 text-center",
                   i % 3 === 1 ? 'sm:translate-y-6' : ''
                 )}
               >

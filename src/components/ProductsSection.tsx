@@ -28,7 +28,6 @@ export function ProductsSection({
     try {
       const res = await fetch(BRANDS_API);
       const result = await res.json();
-
       setBrands(result.data || []);
     } catch (error) {
       console.error(error);
@@ -52,17 +51,16 @@ export function ProductsSection({
 
   return (
     <section
-      id="products"
-      className="py-24 bg-cream relative z-10 overflow-hidden"
-    >
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-
+    id="products"
+    className="py-14 md:py-24 bg-cream relative z-10 overflow-hidden"
+  >
+    <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-display text-4xl md:text-5xl font-bold text-dark-purple inline-block relative"
+            className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-dark-purple inline-block relative"
           >
             Our Registered{' '}
             <span className="relative">
@@ -99,7 +97,7 @@ export function ProductsSection({
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-display text-4xl md:text-5xl font-bold text-dark-purple mb-4"
+            className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-dark-purple mb-4"
           >
             Our Product Range
           </motion.h2>
@@ -109,13 +107,13 @@ export function ProductsSection({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-soft-ink/70 p-5"
+            className="text-base md:text-lg text-soft-ink/70 px-4 md:px-5"
           >
             Innovative feed supplements and animal healthcare solutions designed
             for healthier livestock and better productivity.
           </motion.p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
 
                    {homeSection &&
               [
@@ -159,13 +157,13 @@ export function ProductsSection({
                   <Link
                     key={index}
                     to={`/product/${item.productId}`}
-                    className="group flex flex-col items-center gap-4 rounded-3xl bg-white/90 p-1 shadow-[0_16px_50px_rgba(0,0,0,0.05)] transition-transform hover:-translate-y-1"
+                    className="group flex flex-col items-center gap-3 rounded-2xl md:rounded-3xl bg-white/90 p-1 shadow-[0_16px_50px_rgba(0,0,0,0.05)] transition-transform hover:-translate-y-1"
                   >
                     <div className="rounded-[25px] overflow-hidden shadow-lg">
                       <img
                         src={`https://api.navianpharma.com/${item.image}`}
                         alt="productimage"
-                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-52 sm:h-60 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                   </Link>
@@ -175,7 +173,7 @@ export function ProductsSection({
           <div className="mt-10 flex justify-center">
             <Link
               to="/products"
-              className="inline-flex items-center justify-center rounded-lg bg-golden-yellow px-8 py-3 text-sm font-semibold text-dark-purple transition hover:bg-dark-purple/90 hover:text-white"
+              className="inline-flex items-center justify-center rounded-lg bg-golden-yellow px-6 md:px-8 py-3 text-sm w-full sm:w-auto font-semibold text-dark-purple transition hover:bg-dark-purple/90 hover:text-white"
             >
               See More Products →
             </Link>
